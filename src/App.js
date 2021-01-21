@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
+import Container from 'react-bootstrap/Container';
+import {Switch, Route} from 'react-router-dom';
 import './App.css';
+import Navbar from './Components/Navbar';
+import Product from './Components/Product';
+import ProductList from './Components/ProductList';
+import Cart from './Components/Cart';
+import Details from './Components/Details';
+import Default from './Components/Default';
+import PromoVideo from './Components/PromoVideo';
+import Contact from './Components/Contact';
+import About from './Components/About';
+import Gallery from './Components/Gallery';
+import FeaturedProducts from './Components/FeaturedProducts';
+import Footer from './Components/Footer';
+import cartIcon from './images/cartIcon.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render () {
+    return (
+      <React.Fragment>
+          <Navbar />
+        <Switch>
+          <Route exact path='/' render={props =>
+            <div>
+              <PromoVideo />
+              <FeaturedProducts />
+            </div>
+          } />
+          <Route path='/details' component={Details} />
+          <Route path='/cart' component={Cart} />
+          <Route path='/products' component={ProductList} />
+          <Route path='/gallery' component={Gallery} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/about' component={About} />
+          <Route component={Default} />
+        </Switch>
+        <Footer/>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
