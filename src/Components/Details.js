@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {ProductConsumer} from '../context.js';
 import {Link} from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
+import SizeSelector from './SizeSelector.js';
 
 export default class Details extends Component {
     render() {
@@ -33,8 +34,8 @@ export default class Details extends Component {
                                 <div className="col-10 mx-auto col-md-6 my-3">
                                     <h3 className="mb-5">${price}</h3>
                                     <p className="mb-5">{info}</p>
-                                    <h3 className="mb-5">Buttons go here (S, M, L, XL, XXL)</h3>
-                                    <button className="">Add to cart</button>
+                                    <SizeSelector />
+                                    <button>Add to cart</button>
                                 </div>
                             </div>
                         </div>
