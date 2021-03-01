@@ -1,11 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import Container from 'react-bootstrap/Container';
 import {Switch, Route} from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Product from './Components/Product';
 import ProductList from './Components/ProductList';
-import Cart from './Components/Cart';
+import Cart from './Components/Cart/Cart';
 import Details from './Components/Details';
 import Default from './Components/Default';
 import PromoVideo from './Components/PromoVideo';
@@ -14,7 +12,7 @@ import About from './Components/About';
 import Gallery from './Components/Gallery';
 import FeaturedProducts from './Components/FeaturedProducts';
 import Footer from './Components/Footer';
-import cartIcon from './images/cartIcon.png';
+import Modal from './Components/Modal';
 
 
 class App extends React.Component {
@@ -37,7 +35,8 @@ class App extends React.Component {
           <Route path='/about' component={About} />
           <Route component={Default} />
         </Switch>
-        <Footer/>
+        <Modal />
+        {/** <Footer /> **/ }
       </React.Fragment>
     );
   }

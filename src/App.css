@@ -46,3 +46,37 @@
   overflow: hidden;
 }
 
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  border-radius: 0 !important;
+  border: 0.1rem solid black !important;
+  outline: black;
+}
+
+.btn-black:hover {
+  background: black !important;
+  color: white !important;
+}
+
+.count-text {
+  background: transparent;
+  font-size: 1rem !important;
+  color: black;
+  font-weight: bold;
+  padding-top: 0.3rem;
+}
+
+.btn-remove {
+  background: red !important;
+  color: white !important;
+  font-size: 0.8rem !important;
+  border-radius: 1rem !important;
+  border: 0.1rem solid red !important;
+}
+
+.btn-remove:hover {
+  background: white !important;
+  color: red !important;
+}
