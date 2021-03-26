@@ -22,7 +22,7 @@ export default class extends Component {
                                     <div className="row">
                                         <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center">
                                             <h5 className="my-3">Item added to the cart</h5>
-                                            <img className="my-3" src={img[0]} className="img-fluid" alt="product" />
+                                            <img className="my-3 img-fluid" src={img[0]} alt="product" />
                                             <h5 className="my-3">{title}</h5>
                                             <h5 className="my-3">${price}</h5>
                                             <div className="justify-content-center">
@@ -59,6 +59,7 @@ const ModalContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 
     #modal{
         background: white;

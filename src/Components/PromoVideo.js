@@ -14,7 +14,7 @@ export default class PromoVideo extends Component {
                     url={promoVideo}
                     width="100%"
                     height="100%"
-                    playing="true"
+                    playing={true}
                     controls={true}
                 />
             </div>

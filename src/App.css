@@ -19,15 +19,22 @@
   outline: none;
 }
 
-.links {
-  margin-right: 2rem;
+.product-links {
   color: black;
-  padding: 0px 0px 0px 0px;
 }
 
-.links:hover {
-  color: red;
+.product-links:hover {
+  color: darkgrey;
   text-decoration: none;
+}
+
+.nav-link {
+  margin-right: 2.1rem;
+  color: black;
+}
+
+.nav-link:hover {
+  color: darkgrey;
 }
 
 #navbarr {
@@ -80,3 +87,74 @@
   background: white !important;
   color: red !important;
 }
+
+.cart-icon {
+  height: 35px;
+  width: 35px;
+  margin-right: 3px;
+}
+
+.cart-link {
+  color: black;
+  font-size: 12px;
+}
+
+.cart-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.cart-img {
+  width: 15rem;
+  height: 12rem;
+}
+
+@media (min-width: 992px) {
+  .cart-img {
+    width: 8rem;
+    height: 6rem;
+  }
+}
+
+.cart-row {
+  border: 1px solid black;
+  background: #fafafa;
+}
+
+#footer {
+  position: static;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+
+.ccc-logo {
+  width: 15 0px;
+  height: 70px;
+}
+
+.carousel {
+  z-index: 1;
+}
+
+.social-media-icons {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.product-filter {
+  width: 300px;
+}
+
+.page-title {
+  font-family: "optima";
+  font-size: 40px;
+  font-weight: bold;
+}
+.quantity-dropdown {
+  width: 180px;
+}
+

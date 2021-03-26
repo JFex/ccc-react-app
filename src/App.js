@@ -36,7 +36,7 @@ class App extends React.Component {
           <Route component={Default} />
         </Switch>
         <Modal />
-        {/** <Footer /> **/ }
+        <Footer />
       </React.Fragment>
     );
   }

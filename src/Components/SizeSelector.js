@@ -15,7 +15,7 @@ export default class SizeSelector extends Component {
                     if (value.sizePromptOpen)
                         prompt = "Please enter a size";
                 return (
-                    <div className="mx-auto mb-5">
+                    <div className="mx-auto">
                         <button className="btn btn-black mr-1" onClick={() => {
                             value.setSize(small);
                             value.closeSizePrompt();
